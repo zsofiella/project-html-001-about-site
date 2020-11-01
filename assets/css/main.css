@@ -1,0 +1,8 @@
+.box {
+        display: flex;
+        align-items: left;
+    }
+    @media screen and (max-width: 600px) {
+        html, body {
+          min-width: 320px; } }
+.img { box-shadow: 5px 10px #888888;}
