@@ -7,15 +7,7 @@
 </head>
 <body>
     <h3>About</h3>
-    <header id="header">
-        <a 
-            class="logo"
-            href="/index.html">
-            <img src="/assets/images/pic04.jpeg" alt="Magamról egy kép">
-        </a>
-    </header>
-
-        <nav>
+     <nav>
             <a href="#menu">Menu</a>
         </nav>
     <nav id="menu">
@@ -34,6 +26,13 @@
             </li>
         </ul>
     </nav>
+    <header id="header">
+        <a 
+            class="logo"
+            href="/index.html">
+            <img src="/assets/images/pic04.jpeg" alt="Magamról egy kép">
+        </a>
+    </header>
     <main class="wrapper"   
     <section class="inner">
         <article class="content"
@@ -75,10 +74,10 @@
         </main>
         </article> 
         </section>
-        <form>
-            Név: <input type="text" name="nev" id="nev" value="" />
+        <form id="contact-form" action="script.php" method="post">
+            Név: <input type="text" name="nev" id="nev" value="" minlength="5" />
             E-mail: <input type="text" name="email" id="email" value="" />
-            Üzenet: <textarea name="uzenet" id="uzenet" cols="25" rows="3"></textarea>
+            Üzenet: <textarea name="uzenet" id="uzenet" cols="25" rows="3" minlength="20"></textarea>
             <input type="submit" value="küldés" />
             </form>
         <footer id="footer">
