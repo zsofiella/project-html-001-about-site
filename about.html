@@ -47,13 +47,25 @@
         </article> 
     </section>
     </main>
-
-    <form>
-        Név: <input type="text" name="nev" id="nev" value=""min="5" minlength="5" />
-        E-mail: <input type="text" name="email" id="email" value="" />
-        Megjegyzés: <textarea name="megjegyzes" id="megjegyzes" cols="25" rows="3" minlength="20"></textarea>
-        <input type="submit" value="küldés" />
-    </form>
+    <section>
+        <form action="" class="message-form">
+            <div class="form-group">
+                <label for="">Név</label>
+                <input type="text" min="5" minlength="5" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="">Email</label>
+                <input type="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="">Üzenet</label>
+                <textarea minlength="20" class="form-control" required></textarea>
+            </div>
+            <button type="submit">
+                Küldés
+            </button>
+        </form>
+    </section>
     <footer id="footer">
      <section>
         <a href="#menu">Ugrás a lap tetejére</a>
