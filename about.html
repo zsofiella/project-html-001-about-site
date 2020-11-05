@@ -46,34 +46,14 @@
             </ul>         
         </article> 
     </section>
-    <section>
-        <form action="" class="message-form">
-            <div class="form-group">
-                <label for="Név"></label>
-                <input type="text" min="5" minlength="5" class="form-control" required>
-            </div>
-            <div class="form-group">
-                <label for=""></label>
-                <input type="email" class="form-control" required>
-            </div>
-            <div class="form-group">
-                <label for=""></label>
-                <textarea minlength="20" class="form-control" required></textarea>
-            </div>
-            <button type="submit">
-            Küldés
-            </button>
-        </form>
-     </section>
     </main>
 
-    <h2>Custom checkbox</h2>
-    <ui class="tg-list"
-        <li class="tg-list-item">
-            <input class="tgl tgl-light" id="cb1" type= checkbox"/>
-            <label class="tgl-btn" for="cb1"></label>
-        </li>
-    </ul>
+    <form>
+        Név: <input type="text" name="nev" id="nev" value=""min="5" minlength="5" />
+        E-mail: <input type="text" name="email" id="email" value="" />
+        Megjegyzés: <textarea name="megjegyzes" id="megjegyzes" cols="25" rows="3" minlength="20"></textarea>
+        <input type="submit" value="küldés" />
+    </form>
     <footer id="footer">
      <section>
         <a href="#menu">Ugrás a lap tetejére</a>
